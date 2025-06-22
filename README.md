@@ -16,10 +16,10 @@ Cart Management:
 Secara otomatis menambahkan atau menghapus item menu berdasarkan instruksi AI dalam obrolan.
 
 Database:
-Basis data MongoDB dengan contoh item menu vegan.
+Database MongoDB dengan contoh item menu vegan.
 
 Protected Routes:
-Titik akhir yang aman untuk pengambilan menu dan dasbor pengguna.
+Endpoint yang aman untuk pengambilan menu dan dasbor pengguna.
 
 # Prerequisites
 Node.js (v14 or higher)
