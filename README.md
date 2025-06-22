@@ -1,7 +1,7 @@
 # Vegan Jatim AI Consultation Platform
 System Development and Implementation - UAS - PPS - Moch Rafy Adhipramana Effendy - 6026242012. 
 
-Source code Ulangan Akhir Semester Mata Kuliah Penerapan dan Pengembangan System yang diampu oleh Bapak Dr. Ir. Aris Tjahyanto, M.Kom.
+Source code Ulangan Akhir Semester Mata Kuliah Penerapan dan Pengembangan Sistem yang diampu oleh Bapak Dr. Ir. Aris Tjahyanto, M.Kom.
 
 Aplikasi MERN stack (MongoDB, Express, React, Node.js) dengan integrasi AI Ollama. Proyek ini menyediakan sistem pemesanan menu vegan tempat pengguna dapat mengobrol dengan asisten AI untuk mendapatkan rekomendasi menu, menambahkan atau menghapus item dari keranjang belanja, dan mengelola pesanan mereka dengan mudah.
 
