@@ -6,7 +6,7 @@ Source code Ulangan Akhir Semester Mata Kuliah Penerapan dan Pengembangan Sistem
 Aplikasi MERN stack (MongoDB, Express, React, Node.js) dengan integrasi AI Ollama. Proyek ini menyediakan sistem pemesanan menu vegan tempat pengguna dapat mengobrol dengan asisten AI untuk mendapatkan rekomendasi menu, menambahkan atau menghapus item dari keranjang belanja, dan mengelola pesanan mereka dengan mudah.
 
 # Fitur
-Autentikasi Pengguna:
+Autentikasi Pengguna:  
 Daftar, masuk, dan keluar dengan sesi berbasis JWT yang aman.
 
 AI Chatbot:
