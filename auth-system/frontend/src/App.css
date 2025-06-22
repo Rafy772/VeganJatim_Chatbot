@@ -1,0 +1,773 @@
+/* src/App.css */
+:root {
+  --primary: #6366f1;
+  --primary-hover: #4f46e5;
+  --background: #f8fafc;
+  --text: #0f172a;
+  --card-background: white;
+  --input-border: #e2e8f0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+nav {
+  background-color: var(--card-background);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  padding: 1rem 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+nav .container {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+nav a {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  transition: all 0.2s;
+}
+
+nav a:hover {
+  background-color: var(--background);
+}
+
+.auth-container {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  padding-top: 4rem;
+}
+
+.auth-card {
+  background: var(--card-background);
+  padding: 2.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.auth-card h2 {
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.input-group {
+  margin-bottom: 1.5rem;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid var(--input-border);
+  border-radius: 0.375rem;
+  font-size: 1rem;
+  transition: border-color 0.2s;
+}
+
+.input-group input:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+}
+
+button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 0.375rem;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: var(--primary-hover);
+}
+
+.dashboard-container {
+  padding-top: 6rem;
+  text-align: center;
+}
+
+.dashboard-card {
+  background: var(--card-background);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.dashboard-card h1 {
+  margin-bottom: 1.5rem;
+}
+
+.logout-btn {
+  background-color: #ef4444;
+  width: auto;
+  padding: 0.75rem 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.logout-btn:hover {
+  background-color: #dc2626;
+}
+
+.error-message {
+  color: #ef4444;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.success-message {
+  color: #22c55e;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+/* Add to App.css */
+.menu-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  margin-top: 2rem;
+}
+
+.menu-item {
+  background: var(--card-background);
+  border-radius: 0.75rem;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.menu-item:hover {
+  transform: translateY(-2px);
+}
+
+.item-image {
+  height: 350px;
+  overflow: hidden;
+}
+
+.item-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.item-info {
+  padding: 1.5rem;
+}
+
+.item-info h3 {
+  margin-bottom: 0.5rem;
+  color: var(--text);
+}
+
+.item-info p {
+  color: #64748b;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.item-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price {
+  font-weight: 600;
+  color: var(--primary);
+}
+
+.category {
+  font-size: 0.8rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.375rem;
+  background: #e2e8f0;
+  color: var(--text);
+}
+
+.category.food {
+  background: #bbf7d0;
+  color: #166534;
+}
+
+.category.drink {
+  background: #bfdbfe;
+  color: #1e40af;
+}
+
+/* Add to App.css */
+.nutrition-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.calories {
+  font-size: 0.8rem;
+  color: #64748b;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.calories::before {
+  content: '•';
+  margin-right: 0.25rem;
+}
+
+.item-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.price {
+  font-weight: 600;
+  color: var(--primary);
+  font-size: 1.1rem;
+}
+
+/* Update category styles to align better */
+.category {
+  font-size: 0.8rem;
+  padding: 0.35rem 0.7rem;
+  border-radius: 0.375rem;
+  background: #e2e8f0;
+  color: var(--text);
+  white-space: nowrap;
+  margin-left: 1rem;
+}
+
+/* Add to App.css */
+.input-group label::after {
+  content: " (min 8 characters)";
+  font-size: 0.8em;
+  color: #64748b;
+  margin-left: 0.25rem;
+}
+
+/* Only show helper text for password field */
+.input-group:not(:has(input[type="password"])) label::after {
+  content: none;
+}
+
+/* Add to App.css */
+.availability {
+  font-size: 0.8rem;
+  margin-top: 0.25rem;
+  display: block;
+}
+
+.availability.available {
+  color: #22c55e;
+}
+
+.availability.taken {
+  color: #ef4444;
+}
+
+/* Add this to .input-group */
+.input-group {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.username-feedback {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  height: 1.2rem;
+}
+
+.checking {
+  color: #64748b;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.checking::before {
+  content: "";
+  width: 0.8rem;
+  height: 0.8rem;
+  border: 2px solid #64748b;
+  border-radius: 50%;
+  border-top-color: transparent;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.availability {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.availability::before {
+  content: "";
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 50%;
+}
+
+.available {
+  color: #22c55e;
+}
+
+.available::before {
+  background: #22c55e;
+}
+
+.taken {
+  color: #ef4444;
+}
+
+.taken::before {
+  background: #ef4444;
+}
+
+.auth-footer {
+  margin-top: 1.5rem;
+  text-align: center;
+  color: #64748b;
+}
+
+.auth-footer a {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+button:disabled {
+  background-color: #94a3b8;
+  cursor: not-allowed;
+}
+
+button:disabled:hover {
+  background-color: #94a3b8;
+}
+
+.consultation-container {
+  padding: 2rem 0;
+}
+
+.consultation-card {
+  background: var(--card-background);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.response-card {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: #f8fafc;
+  border-radius: 0.75rem;
+  border: 1px solid var(--input-border);
+}
+
+.response-card pre {
+  white-space: pre-wrap;
+  font-family: inherit;
+  line-height: 1.5;
+}
+
+textarea {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid var(--input-border);
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  resize: vertical;
+  min-height: 120px;
+}
+
+button:disabled {
+  background-color: #94a3b8;
+  cursor: not-allowed;
+}
+
+/* Add these styles to App.css */
+
+.consultation-container {
+  padding: 2rem 0;
+}
+
+.consultation-card {
+  background: var(--card-background);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  height: 650px;
+}
+
+.chat-container {
+  flex: 1;
+  overflow-y: auto;
+  margin-bottom: 1rem;
+  border: 1px solid var(--input-border);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  background-color: #f8f9fa;
+  max-height: 500px;
+}
+
+.empty-chat {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: #64748b;
+  font-style: italic;
+}
+
+.messages-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+  max-width: 85%;
+}
+
+.message.user {
+  align-self: flex-end;
+}
+
+.message.ai {
+  align-self: flex-start;
+}
+
+.message.system {
+  align-self: center;
+  max-width: 100%;
+}
+
+.message-bubble {
+  padding: 0.75rem 1rem;
+  border-radius: 1rem;
+  word-break: break-word;
+}
+
+.user .message-bubble {
+  background-color: var(--primary);
+  color: white;
+  border-top-right-radius: 0.25rem;
+}
+
+.ai .message-bubble {
+  background-color: #e2e8f0;
+  color: var(--text);
+  border-top-left-radius: 0.25rem;
+}
+
+.system .message-bubble {
+  background-color: #fee2e2;
+  color: #ef4444;
+  font-size: 0.9rem;
+}
+
+.message-timestamp {
+  font-size: 0.75rem;
+  color: #64748b;
+  margin-top: 0.25rem;
+  align-self: flex-end;
+}
+
+.ai .message-timestamp {
+  align-self: flex-start;
+}
+
+.ai-message-content {
+  white-space: pre-wrap;
+  font-family: inherit;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.chat-input-form {
+  margin-top: auto;
+}
+
+.chat-input-container {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.chat-input {
+  flex: 1;
+  padding: 0.75rem;
+  border: 1px solid var(--input-border);
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  resize: none;
+  min-height: 60px;
+  transition: border-color 0.2s;
+}
+
+.chat-input:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+}
+
+.send-button {
+  align-self: flex-end;
+  width: auto;
+  padding: 0.75rem 1.5rem;
+  height: 100%;
+  max-height: 60px;
+}
+
+/* Add these styles to your App.css */
+
+/* Cart Display */
+.cart-display {
+  background: #f0f9ff;
+  border: 2px solid #0ea5e9;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.cart-display h3 {
+  margin-bottom: 1rem;
+  color: #0369a1;
+  font-size: 1.2rem;
+}
+
+.cart-items {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  background: white;
+  border-radius: 0.375rem;
+  font-size: 0.9rem;
+}
+
+.cart-quantity {
+  color: #64748b;
+  font-weight: 500;
+}
+
+.cart-price {
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.cart-total {
+  text-align: right;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--primary);
+  border-top: 1px solid #e2e8f0;
+  padding-top: 0.75rem;
+}
+
+/* Cart Controls */
+.cart-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e2e8f0;
+}
+
+.cart-btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.375rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  width: auto;
+}
+
+.add-btn {
+  background-color: #22c55e;
+  color: white;
+}
+
+.add-btn:hover {
+  background-color: #16a34a;
+}
+
+.remove-btn {
+  background-color: #ef4444;
+  color: white;
+}
+
+.remove-btn:hover {
+  background-color: #dc2626;
+}
+
+.item-quantity {
+  background-color: var(--primary);
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 50%;
+  font-weight: 600;
+  font-size: 0.9rem;
+  min-width: 2rem;
+  text-align: center;
+}
+
+/* Add these styles to your App.css */
+
+.message.system.cart-update .message-bubble {
+  background-color: #dcfce7;
+  color: #166534;
+  border: 1px solid #22c55e;
+  font-weight: 500;
+}
+
+.message.system.cart-update {
+  align-self: center;
+  max-width: 100%;
+}
+
+.message.system.cart-update .message-bubble {
+  text-align: center;
+  font-size: 0.9rem;
+  padding: 0.5rem 1rem;
+}
+
+/* Enhanced system message styles */
+.system .message-bubble {
+  background-color: #fee2e2;
+  color: #ef4444;
+  font-size: 0.9rem;
+  text-align: center;
+  border-radius: 0.5rem;
+}
+
+/* Success system messages (cart updates) */
+.system.cart-update .message-bubble {
+  background-color: #dcfce7 !important;
+  color: #166534 !important;
+  border: 1px solid #22c55e;
+}
+
+/* Add these styles to App.css */
+
+.checkout-section {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e2e8f0;
+}
+
+.checkout-btn {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  background-color: #22c55e;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: background-color 0.2s;
+}
+
+.checkout-btn:hover {
+  background-color: #16a34a;
+}
+
+.order-success {
+  text-align: center;
+  padding: 3rem 0;
+}
+
+.order-success h1 {
+  color: #22c55e;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.order-success p {
+  color: #64748b;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.success-actions {
+  margin-top: 2rem;
+}
+
+.back-btn {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  background-color: var(--primary);
+  color: white;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.back-btn:hover {
+  background-color: var(--primary-hover);
+}
