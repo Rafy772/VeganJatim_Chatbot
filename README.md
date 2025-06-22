@@ -9,22 +9,22 @@ Aplikasi MERN stack (MongoDB, Express, React, Node.js) dengan integrasi AI Ollam
 Autentikasi Pengguna:  
 Daftar, masuk, dan keluar dengan sesi berbasis JWT yang aman.
 
-AI Chatbot:
+AI Chatbot:  
 Berkomunikasi dalam Bahasa Indonesia dengan asisten AI (didukung oleh model Gemma 4B milik Google) untuk menanyakan menu, mendapatkan rekomendasi, dan menangani tindakan keranjang belanja menggunakan tag [CART_ACTION] khusus.
 
-Cart Management:
+Cart Management:  
 Secara otomatis menambahkan atau menghapus item menu berdasarkan instruksi AI dalam obrolan.
 
-Database:
+Database:  
 Database MongoDB dengan contoh item menu vegan.
 
-Protected Routes:
+Protected Routes:  
 Endpoint yang aman untuk pengambilan menu dan dasbor pengguna.
 
 # Prerequisites
 Node.js (v14 or higher)
-npm or Yarn
-MongoDB instance (locally)
+npm or Yarn  
+MongoDB instance (locally) 
 Ollama CLI (locally)
 
 #Environment Variables
@@ -61,16 +61,16 @@ Berapa asupan kalori harian saya jika usia saya 20 tahun, berat badan 68 kg, tin
 
 Backend:
 
-express
-mongoose
-bcryptjs
-jsonwebtoken
-cors
-dotenv
-node.js
+express  
+mongoose  
+bcryptjs  
+jsonwebtoken  
+cors  
+dotenv  
+node.js  
 
 Frontend:
 
-react
-react-dom
-axios
+react  
+react-dom  
+axios  
