@@ -26,6 +26,7 @@ Node.js (v14 or higher)
 npm or Yarn  
 MongoDB instance (locally)   
 Ollama CLI (locally)  
+ollama run gemma3:4b  
 
 #Environment Variables
 Buat file .env di dalam directory backend/ dengan variabel berikut:  
@@ -33,7 +34,6 @@ MONGODB_URI=your_mongodb_connection_string
 JWT_SECRET=your_jwt_secret_key  
 PORT=5000  
 OLLAMA_URL=http://localhost:11434  
-ollama run gemma3:4b  
 
 #Installation & Setup
 Clone the repository  
